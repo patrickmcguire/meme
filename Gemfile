@@ -68,7 +68,7 @@ group :test, :development do
   gem 'rspec-rails', '~> 2.0'
   gem 'shoulda'
   gem 'webrat'
-  gem 'jasmine-headless-webkit'
+  gem 'jasmine-headless-webkit', :git => 'https://github.com/johnbintz/jasmine-headless-webkit.git', branch: 'master'
   gem 'sqlite3'
   gem 'rspec_stubout'
   gem 'rubocop'
@@ -83,4 +83,5 @@ group :production do
   gem 'dalli'
   gem 'pg'
   gem 'rack-rewrite'
+  gem 'rails_12factor'
 end
